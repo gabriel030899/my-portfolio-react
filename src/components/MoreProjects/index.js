@@ -14,7 +14,7 @@ const MoreProjects = () => {
                 <div className="project-header">
                     <div className="project-title">
                         <h2>Comic Readers</h2>
-                        <a target='_blank' href='https://comicreaders.netlify.app/'><span>comicreaders.netlify.app</span></a>
+                        <a target='_blank' rel="noreferrer" href='https://comicreaders.netlify.app/'><span>comicreaders.netlify.app</span></a>
                     </div>
                     <div className="next_project">
                         
@@ -30,7 +30,7 @@ const MoreProjects = () => {
                         <div className="project-description-text">
                             <h3>Project Description</h3>
                             <p>I developed Comic Readers, a website designed to enhance the user experience in book searches. Using <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b>, I created an intuitive interface with advanced filters that make searches faster and more efficient. Additionally, I developed a book recommendation algorithm that suggests options based on user choices, creating a dynamic and personalized experience. This solution offers multiple combinations of suggestions, making it easier to choose books that match the user's interests. The project not only improves interaction but also integrates features that make the literary discovery process more engaging and accurate.</p>
-                            <FontAwesomeIcon icon={faGithub} /> <a target='_blank' href='https://github.com/gabriel030899/comicreaders'>Github repository</a>
+                            <FontAwesomeIcon icon={faGithub} /> <a target='_blank' rel="noreferrer" href='https://github.com/gabriel030899/comicreaders'>Github repository</a>
                         </div>
                         <div className="project-description-tech">
                         <h3>Project Technologies</h3>
