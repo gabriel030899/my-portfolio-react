@@ -1,8 +1,9 @@
-import { Link } from "react-router-dom"
+import { Link, NavLink } from 'react-router-dom'
 import './index.scss'
 import AnimatedLetters from "../AnimatedLetters"
 import { useEffect, useState } from "react"
-import MoreProjects from "./MoreProjects"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faChevronRight} from '@fortawesome/free-solid-svg-icons';
 
 const Home = () => {
 
@@ -36,7 +37,11 @@ const Home = () => {
             
                 <Link to="/contact" className="flat-button">CONTACT ME</Link>
             </div>
-            <MoreProjects />
+            <div className="my-projects">
+                <NavLink exact="true" activeclassname="active" className="more-projects" to='/more-projects'>
+                    <span>MY PROJECTS <FontAwesomeIcon icon={faChevronRight} color="#ffd700"/></span>
+                </NavLink>
+                </div>
         </div>
     )
 }

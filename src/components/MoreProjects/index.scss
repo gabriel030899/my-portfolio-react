@@ -1,0 +1,243 @@
+.more-projects{
+    width: 100%;
+    display: block;
+    padding-top: 50px;
+    height: 100%;
+    opacity: 0;
+    transform: translateX(100%);
+    animation: slideIn 1s forwards;
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.comic-readers{
+    width: 100%;
+    display: block;
+    height: 100%;
+    padding: 0 0 0 150px;
+
+    .project-header{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    
+        .project-title{
+            font-size: 20px;
+            font-weight: 700;
+            color: #ffd700;
+
+            h2{
+                margin: 20px 0 0 40px;
+
+                &::before{
+                    content: '<h1>';
+                    font-family: 'La Belle Aurore';
+                    color: #ffd700;
+                    font-size: 18px;
+                    position: absolute;
+                    margin-left: -40px;
+                    opacity: 0.6;
+                }
+                &::after{
+                    content: '</h1>';
+                    font-family: 'La Belle Aurore';
+                    color: #ffd700;
+                    font-size: 18px;
+                    position: absolute;
+                    margin-top: 18px;
+                    margin-left: 20px;
+                    opacity: 0.6;
+                    animation: fadeIn 1s 1.7s backwards;
+                }
+
+            }
+
+            a{
+                color: #fff;
+                text-decoration: none;
+                margin: 0 0 0 40px;
+
+                &::before{
+                    content: '<a>';
+                    font-family: 'La Belle Aurore';
+                    color: #ffd700;
+                    font-size: 18px;
+                    position: absolute;
+                    
+                    margin-left: -30px;
+                    opacity: 0.6;
+                }
+                &::after{
+                    content: '</a>';
+                    font-family: 'La Belle Aurore';
+                    color: #ffd700;
+                    font-size: 18px;
+                    position: absolute;
+                    margin-top: 10px;
+                    margin-left: 20px;
+                    opacity: 0.6;
+                    animation: fadeIn 1s 1.7s backwards;
+                }
+            }
+        }
+    }
+
+    .project-body{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 20px;
+
+        .project-description{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            color: #fff;
+            font-size: 16px;
+            line-height: 1.5;
+
+            b, h3{
+                color: #ffd700;
+            }
+
+            h3{
+                font-size: 18px;
+                
+
+                &::before{
+                    content: '<h2>';
+                    font-family: 'La Belle Aurore';
+                    color: #ffd700;
+                    font-size: 18px;
+                    position: absolute;
+                    margin-left: -30px;
+                    margin-top: -20px;
+                    opacity: 0.6;
+                }
+                &::after{
+                    content: '</h2>';
+                    font-family: 'La Belle Aurore';
+                    color: #ffd700;
+                    font-size: 18px;
+                    position: absolute;
+                    margin-top: 10px;
+                    margin-left: 20px;
+                    opacity: 0.6;
+                    animation: fadeIn 1s 1.7s backwards;
+                }
+            }
+
+            p{
+                width: 70%;
+
+                &::before{
+                    content: '<p>';
+                    font-family: 'La Belle Aurore';
+                    color: #ffd700;
+                    font-size: 18px;
+                    position: absolute;
+                    margin-left: -25px;
+                    margin-top: -25px;
+                    opacity: 0.6;
+                }
+                &::after{
+                    content: '</p>';
+                    font-family: 'La Belle Aurore';
+                    color: #ffd700;
+                    font-size: 18px;
+                    position: absolute;
+                    margin-top: 10px;
+                    margin-left: 20px;
+                    opacity: 0.6;
+                    animation: fadeIn 1s 1.7s backwards;
+                }
+            }
+
+            .project-description-text a{
+                text-decoration: none;
+                color: #fff;
+                font-weight: 700;
+            }
+
+            .project-description-tech{
+                margin-top: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+
+                
+
+                .tech-percentage{
+                    width: 400px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    text-align: center;
+                    color: #fff;
+                    background:#022c43;
+                    margin-top: 5px;
+                    height: 50px;
+
+                    img{
+                        height: 50px;
+                    }
+
+                    .percentage-bar{
+                        width: 100%;
+                        height: 25px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        background: #fff;
+                        border-radius: 50px;
+                        margin-left: 10px;
+                    
+                        .percentage-fill{
+                            width: 100%;
+                            display: block;
+                            background: #ffd700;
+                            height: 100%;
+                            border-radius: 50px;
+                        }
+                    
+                    }
+                }
+            }
+        }
+
+        .project-images{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            img{
+            width: 70%;
+            height: auto;
+            margin-top: 20px;
+            margin: 0 40px 20px 40px;
+            border-radius: 5px;
+
+            &:nth-child(odd) {
+                align-self: flex-start;
+            }
+            &:nth-child(even) {
+                align-self: flex-end;
+            }
+            }
+
+        }
+        
+    }
+
+}
