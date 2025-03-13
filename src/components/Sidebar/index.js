@@ -9,9 +9,9 @@ const Sidebar = () => (
     <div className='nav-bar'>
         <Link className='logo' to='/'>
             <img src={LogoG} alt='logo' />
-            <p>Gabriel</p>
-            <p>Zanella</p>
         </Link>
+        <p>Gabriel</p>
+        <p>Zanella</p>
         <nav>
             <NavLink exact="true" activeclassname="active" to='/'>
                 <FontAwesomeIcon icon={faHome} color="#4e4e4e"/>

@@ -6,6 +6,17 @@
     top: 0;
     z-index: 3;
     min-height: 500px;
+
+    p{
+        font-size: 11px;
+        font-weight: bold;
+        color: #fff;
+        font-family: sans-serif;
+        text-decoration: none;
+        margin: 0 5px;
+        line-height: 12px;
+        text-align: center;
+    }
 }
 .logo{
     display: block;
@@ -16,22 +27,6 @@
         margin: 8px auto;
         width: 54px;
         height: auto;
-    }
-
-    p{
-        font-size: 11px;
-        font-weight: bold;
-        color: #fff;
-        text-decoration: none;
-        margin: 0 5px;
-        line-height: 12px;
-    
-        &:first-child{
-            text-align: start;
-        }
-        &:last-child{
-            text-align: end;
-        }
     }
 }
 
