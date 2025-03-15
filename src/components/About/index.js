@@ -24,11 +24,19 @@ const About = () => {
                     idx={15}
                     />
                 </h1>
-                <p>I am a Data Analyst and Web Developer passionate about creating digital solutions that optimize processes and improve efficiency. Currently, I work as a PL Data Analyst at NBS Latam, where I develop applications and software using Microsoft's Power Platform, with expertise in <b>Power BI</b>, <b>Power Apps</b>, and <b>Power Automate</b>. I collaborate directly with clients and partners to define requirements, process flows, and mockups, applying agile methodologies such as SCRUM.</p>
-                <p>In addition to the Power Platform, I have extensive knowledge in <b>HTML</b>, <b>CSS</b>, <b>Javascript</b>, <b>React.js</b>, <b>PHP</b>, <b>Python</b>, <b>Swift</b>, and <b>SwiftUI</b>, which allows me to think creatively and offer innovative approaches to problem-solving. 
-Currently, I am expanding my skills in iOS Development and ReactJS at CodeCademy and have certifications in PHP, HTML, and JavaScript from DevMedia. 
-I am pursuing a Bachelor's degree in Systems Analysis and Development at Universidade Paulista, with an expected graduation date in 2026.</p>
-                <p>I enjoy working in a team, believing in the power of knowledge exchange, communication, and collaboration to achieve organizational goals.</p>
+                <p>Sobre
+                I am a Data Analyst and Web Developer, currently working as a Mid Level Data Analyst at NBS Latam, where I develop applications and software using Microsoft's Power Platform (Power BI, Power Apps, and Power Automate), optimizing processes and improving operational efficiency. I work directly with clients and stakeholders to define requirements, model process flows, and develop mockups, applying agile methodologies such as SCRUM.</p>
+                <p>My expertise extends beyond the Power Platform. I have solid knowledge in web development, with proficiency in HTML, CSS, JavaScript, ReactJS, TypeScript, Next.js, PHP, and Python.</p>
+                <p>I am pursuing a Bachelor’s degree in Systems Analysis and Development at Universidade Paulista, expected to graduate in 2026. I believe in the power of collaboration, communication, and continuous learning to drive innovation and create a positive impact on the projects I work on.
+                Skills & Experience
+                ✅ Power BI, Power Apps, Power Automate
+                ✅ HTML, CSS, JavaScript, ReactJS, TypeScript, Next.js
+                ✅ PHP, Python, SQL, Azure
+                ✅ Web Development
+                ✅ Agile Methodologies (SCRUM)
+                ✅ Data Analysis and Process Automation
+                ✅ UX/UI, Prototyping, and Process Modeling
+                </p>
             </div>
 
             <div className="stage-cube-cont">
