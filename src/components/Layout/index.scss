@@ -39,7 +39,7 @@
 
 }
 
-.about-page{
+.about-page, .contact-page{
     .text-zone{
         position: absolute;
         left: 10%;
@@ -88,10 +88,10 @@
     }
 
     p{
-        font-style: 13px;
+        font-size: 13px;
         color: #fff;
         font-family: sans-serif;
-        font-weight: 300;
+        font-weight: 400;
         min-width: fit-content;
         animation: pulse 1s;
 
@@ -113,6 +113,28 @@
 
     .text-animate-hover{
         &:hover{
+            color: #fff;
+        }
+    }
+
+    h2{
+        font-size: 25px;
+        color: #ffd700;
+        font-family: 'Coolvetica';
+        font-weight: 300;
+        margin-bottom: 25px;
+    }
+
+    ul{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 150px;
+
+        li{
+            text-align: start;
+            font-size: 13px;
             color: #fff;
         }
     }
