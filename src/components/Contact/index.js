@@ -8,9 +8,10 @@ const Contact = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
     const form = useRef();
       
+    // chamada da biblioteca que envia os emails
     const sendEmail = (e) => {
         e.preventDefault();
-      
+        
         emailjs
         .sendForm('service_tccrv4i', 'template_vnndbvo', form.current, {
             publicKey: 'qcoAMGBTIJUJIP-Tt',
