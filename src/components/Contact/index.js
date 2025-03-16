@@ -2,10 +2,13 @@ import { useEffect, useState, useRef } from 'react'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 import emailjs from '@emailjs/browser';
+import { useNavigate } from 'react-router-dom';
+
 
 const Contact = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
     const form = useRef();
+    const navigate = useNavigate();
       
     const sendEmail = (e) => {
         e.preventDefault();
@@ -17,11 +20,11 @@ const Contact = () => {
         .then(
             () => {
             alert('Your message has been sent successfully! Thanks for the contact!')
-            window.location.reload(false)
+            navigate(0)
             },
             (error) => {
             alert('Failed to send the message, please try again.')
-            window.location.reload(false)
+            navigate(0)
             },
         );
     };
