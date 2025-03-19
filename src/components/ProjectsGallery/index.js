@@ -13,13 +13,13 @@ const ProjectsGallery = () => {
                     <div className="project-card">
                         <img src={project.image} alt={project.name} />
                         <span className="project-name">{project.name}</span>
-                        <a target="_blank" href={project.link}>{project.linkName}</a>
+                        <a target="_blank" rel="noreferrer" href={project.link}>{project.linkName}</a>
                         <div className="skills-container">
                             {project.skills.map((skills) => (
                                  <span>{skills.icon} {skills.name}</span>
                             ))}
                         </div>
-                        <a target="_blank" href={project.github}> <FontAwesomeIcon icon={faGithub} color="#022c43" /> Github</a>
+                        <a target="_blank" rel="noreferrer" href={project.github}> <FontAwesomeIcon icon={faGithub} color="#022c43" /> Github</a>
                     </div>
                 ))}
             </div>
