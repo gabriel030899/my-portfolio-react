@@ -2,9 +2,9 @@ import './App.scss';
 import { Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './components/Home';
-import MoreProjects from './components/MoreProjects';
 import About from './components/About';
 import Contact from './components/Contact';
+import ProjectsGallery from './components/ProjectsGallery';
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
-        <Route path='/more-projects' element={<MoreProjects />} />
+        <Route path='/projects-gallery' element={<ProjectsGallery />} />
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
       </Route>

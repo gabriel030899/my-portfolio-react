@@ -38,7 +38,7 @@ const Home = () => {
                 <Link to="/contact" className="flat-button">CONTACT ME</Link>
             </div>
             <div className="my-projects">
-                <NavLink exact="true" activeclassname="active" className="more-projects" to='/more-projects'>
+                <NavLink exact="true" activeclassname="active" className="projects-gallery" to='/projects-gallery'>
                     <span>MY PROJECTS <FontAwesomeIcon icon={faChevronRight} color="#ffd700"/></span>
                 </NavLink>
                 </div>
