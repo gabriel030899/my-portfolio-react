@@ -1,3 +1,9 @@
+$breakpoints: (
+  "small": 480px,
+  "medium": 805px,
+  "big": 1024px,
+);
+
 .page{
     height: 100%;
     width: 100%;
@@ -135,5 +141,16 @@
             font-size: 13px;
             color: #fff;
         }
+    }
+}
+
+@media (max-width: map-get($breakpoints, "medium")) {
+    .top-tags{
+        left: 10px;
+        top: 25px;
+    }
+    .bottom-tags{
+        left: 40px;
+        bottom: 80px;
     }
 }
