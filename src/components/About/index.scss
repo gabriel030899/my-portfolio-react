@@ -1,3 +1,9 @@
+$breakpoints: (
+  "medium-small": 715px,
+  "medium": 805px,
+  "big": 1024px,
+);
+
 .stage-cube-cont{
     width: 50%;
     height: 100%;
@@ -75,5 +81,16 @@
     }
     83%{
         transform: rotateX(90deg)
+    }
+}
+
+@media (max-width: map-get($breakpoints, "medium-small")) {
+    .stage-cube-cont{
+        width: 40%;
+
+        .cubespinner div{
+            width: 100px;
+            height: 100px;
+        }
     }
 }
