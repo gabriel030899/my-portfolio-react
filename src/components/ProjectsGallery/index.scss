@@ -35,6 +35,14 @@ $breakpoints: (
             width: 250px;
             border-radius: 10px;
             box-shadow: 2px 3px 3px 3px #fff4b491;
+            opacity: 0;
+            animation: fadeInUp 2s 2s;
+            animation-fill-mode: forwards;
+            
+            &:nth-child(1){
+                animation-delay: 0.5s;
+            }
+            
             
             img{
                 width: 100%;

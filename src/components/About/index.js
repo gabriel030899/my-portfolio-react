@@ -24,20 +24,21 @@ const About = () => {
                     idx={15}
                     />
                 </h1>
-                <p>
-                I am a <b>Data Analyst</b> and <b>Front-End Web Developer</b>, currently working as a Mid Level Data Analyst at NBS Latam, where I develop applications and software using Microsoft's Power Platform (<b>Power BI</b>, <b>Power Apps</b>, and <b>Power Automate</b>), optimizing processes and improving operational efficiency. I work directly with clients and stakeholders to define requirements, model process flows, and develop mockups, applying agile methodologies such as SCRUM.</p>
-                <p>My expertise extends beyond the Power Platform. I have solid knowledge in web development, with proficiency in <b>HTML</b>, <b>CSS</b>, <b>Javascript</b>, <b>React.js</b>, <b>Typescript</b>, <b>Next.js</b>, <b>PHP</b>, and <b>Python</b>.</p>
-                <p>I am pursuing a Bachelor’s degree in Systems Analysis and Development at Universidade Paulista, expected to graduate in 2026. I believe in the power of collaboration, communication, and continuous learning to drive innovation and create a positive impact on the projects I work on.</p>
-                <h2>Skills & Experience</h2>
-                <ul>
-                    <li>✅ Power BI, Power Apps, Power Automate</li>
-                    <li>✅ HTML, CSS, JavaScript, ReactJS, TypeScript, Next.js</li>
-                    <li>✅ PHP, Python, SQL, Azure</li>
-                    <li>✅ Agile Methodologies (SCRUM)</li>
-                    <li>✅ Data Analysis and Process Automation</li>
-                    <li>✅ UX/UI, Prototyping, and Process Modeling</li>
-                </ul>
-                
+                <div className="text-description">
+                    <p>
+                    I am a <b>Data Analyst</b> and <b>Front-End Web Developer</b>, currently working as a Mid Level Data Analyst at NBS Latam, where I develop applications and software using Microsoft's Power Platform (<b>Power BI</b>, <b>Power Apps</b>, and <b>Power Automate</b>), optimizing processes and improving operational efficiency. I work directly with clients and stakeholders to define requirements, model process flows, and develop mockups, applying agile methodologies such as SCRUM.</p>
+                    <p>My expertise extends beyond the Power Platform. I have solid knowledge in web development, with proficiency in <b>HTML</b>, <b>CSS</b>, <b>Javascript</b>, <b>React.js</b>, <b>Typescript</b>, <b>Next.js</b>, <b>PHP</b>, and <b>Python</b>.</p>
+                    <p>I am pursuing a Bachelor’s degree in Systems Analysis and Development at Universidade Paulista, expected to graduate in 2026. I believe in the power of collaboration, communication, and continuous learning to drive innovation and create a positive impact on the projects I work on.</p>
+                    <h2>Skills & Experience</h2>
+                    <ul>
+                        <li>✅ Power BI, Power Apps, Power Automate</li>
+                        <li>✅ HTML, CSS, JavaScript, ReactJS, TypeScript, Next.js</li>
+                        <li>✅ PHP, Python, SQL, Azure</li>
+                        <li>✅ Agile Methodologies (SCRUM)</li>
+                        <li>✅ Data Analysis and Process Automation</li>
+                        <li>✅ UX/UI, Prototyping, and Process Modeling</li>
+                    </ul>
+                </div>
             </div>
 
             <div className="stage-cube-cont">
@@ -60,6 +61,31 @@ const About = () => {
                     <div className="face6">
                         <FontAwesomeIcon icon={faGitAlt} color="#EC4D28"/>
                     </div>
+                </div>
+            </div>
+
+            <div className="text-zone-mobile">
+                <h1>
+                    <AnimatedLetters 
+                    letterClass={letterClass}
+                    strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
+                    idx={15}
+                    />
+                </h1>
+                <div className="text-description">
+                    <p>
+                    I am a <b>Data Analyst</b> and <b>Front-End Web Developer</b>, currently working as a Mid Level Data Analyst at NBS Latam, where I develop applications and software using Microsoft's Power Platform (<b>Power BI</b>, <b>Power Apps</b>, and <b>Power Automate</b>), optimizing processes and improving operational efficiency. I work directly with clients and stakeholders to define requirements, model process flows, and develop mockups, applying agile methodologies such as SCRUM.</p>
+                    <p>My expertise extends beyond the Power Platform. I have solid knowledge in web development, with proficiency in <b>HTML</b>, <b>CSS</b>, <b>Javascript</b>, <b>React.js</b>, <b>Typescript</b>, <b>Next.js</b>, <b>PHP</b>, and <b>Python</b>.</p>
+                    <p>I am pursuing a Bachelor’s degree in Systems Analysis and Development at Universidade Paulista, expected to graduate in 2026. I believe in the power of collaboration, communication, and continuous learning to drive innovation and create a positive impact on the projects I work on.</p>
+                    <h2>Skills & Experience</h2>
+                    <ul>
+                        <li>✅ Power BI, Power Apps, Power Automate</li>
+                        <li>✅ HTML, CSS, JavaScript, ReactJS, TypeScript, Next.js</li>
+                        <li>✅ PHP, Python, SQL, Azure</li>
+                        <li>✅ Agile Methodologies (SCRUM)</li>
+                        <li>✅ Data Analysis and Process Automation</li>
+                        <li>✅ UX/UI, Prototyping, and Process Modeling</li>
+                    </ul>
                 </div>
             </div>
         </div>

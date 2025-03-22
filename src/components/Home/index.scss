@@ -152,7 +152,7 @@ $breakpoints: (
                 font-size: 18px;
                 position: absolute;
                 margin-top: -10px;
-                left: 15px;
+                left: 25px;
                 opacity: 0.6;
             }
             &::after{
@@ -168,14 +168,14 @@ $breakpoints: (
             }
         }
         span{
-            font-size: 28px;
+            font-size: 32px;
         }
         h1 .my-name{
-            font-size: 28px;
+            font-size: 32px;
         }
         .text-zone{
             position: absolute;
-            top: 28%;
+            top: 32%;
             left: 0;
             width: 100%;
             display: flex;

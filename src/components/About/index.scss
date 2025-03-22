@@ -4,6 +4,10 @@ $breakpoints: (
   "big": 1024px,
 );
 
+.text-zone-mobile{
+    display: none;
+}
+
 .stage-cube-cont{
     width: 50%;
     height: 100%;
@@ -87,10 +91,66 @@ $breakpoints: (
 @media (max-width: map-get($breakpoints, "medium-small")) {
     .stage-cube-cont{
         width: 40%;
+        height: 100px;
 
-        .cubespinner div{
-            width: 100px;
-            height: 100px;
+        .cubespinner{
+            position: absolute;
+            right: 100px;
+            transform-origin: 25px 25px 0;
+            height: auto;
+
+            div{
+                width: 50px;
+                height: 50px;
+                font-size: 50px;
+            }
+            .face1{
+                transform: translateZ(25px);
+            }
+        
+            .face2{
+                transform: rotateY(90deg) translateZ(25px);
+            }
+        
+            .face3{
+                transform: rotateY(90deg) rotateX(90deg) translateZ(25px);
+            }
+        
+            .face4{
+                transform: rotateY(180deg) rotateZ(90deg) translateZ(25px);
+            }
+        
+            .face5{
+                transform: rotateY(-90deg) rotateZ(90deg) translateZ(25px);
+            }
+        
+            .face6{
+                transform: rotateX(-90deg) translateZ(25px);
+            }
+        }
+    }
+    .about-page{ 
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+        .text-zone{
+           display: none;
+        }
+        
+        .text-zone-mobile{
+            display: block;
+            margin: 80px 0 0 20px;
+
+            h1{
+                font-size: 30px;
+            }
+        }
+
+        .text-description{
+            overflow: scroll;
+            height: 50vh;
+            width: 90%;
         }
     }
 }
