@@ -1,33 +1,35 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCss3, faHtml5, faJsSquare, faReact, faSass } from '@fortawesome/free-brands-svg-icons'
 import comicreaders1 from '../../assets/images/comicreaders1.png'
 import myportfolio from '../../assets/images/my-portfolio.png'
 
 
 const projectsList = [
     {
+        id: 1,
         name: 'My Portfolio',
         link: 'https://www.gabrielzanella.com.br',
         linkName: 'gabrielzanella.com.br',
         skills: [
-            {name:'HTML', icon: <FontAwesomeIcon icon={faHtml5} color="#022c43"/>}, 
-            {name:'SASS', icon: <FontAwesomeIcon icon={faSass} color="#022c43"/>},
-            {name:'REACT', icon: <FontAwesomeIcon icon={faReact} color="#022c43"/>}
+            {name:'HTML'}, 
+            {name:'SASS'},
+            {name:'REACT'}
         ],
         github: 'https://github.com/gabriel030899/my-portfolio-react',
-        image: myportfolio
+        image: myportfolio,
+        description: "I built my portfolio website entirely with React.js, ensuring a fast and dynamic user experience. The project is fully responsive, adapting seamlessly to all devices. For styling, I used SASS, allowing for modular and maintainable CSS with enhanced flexibility. To handle contact form submissions efficiently, I integrated the EmailJS library, enabling direct email sending without the need for a back-end. The combination of React.js, SASS, and EmailJS ensures a modern, scalable, and visually appealing portfolio."
     },
     {
+        id: 2,
         name: 'Comic Readers',
         link: 'https://comicreaders.netlify.app/',
         linkName: 'comicreaders.netlify.app',
         skills: [
-            {name:'HTML', icon: <FontAwesomeIcon icon={faHtml5} color="#022c43"/>}, 
-            {name:'CSS', icon: <FontAwesomeIcon icon={faCss3} color="#022c43"/>},
-            {name:'JAVASCRIPT', icon: <FontAwesomeIcon icon={faJsSquare} color="#022c43"/>}
+            {name:'HTML'}, 
+            {name:'CSS'},
+            {name:'JAVASCRIPT'},
         ],
         github: 'https://github.com/gabriel030899/comicreaders',
-        image: comicreaders1
+        image: comicreaders1,
+        description: "I developed Comic Readers, a website designed to enhance the user experience in book searches. Using HTML, CSS, and JavaScript, I created an intuitive interface with advanced filters that make searches faster and more efficient. Additionally, I developed a book recommendation algorithm that suggests options based on user choices, creating a dynamic and personalized experience. This solution offers multiple combinations of suggestions, making it easier to choose books that match the user's interests. The project not only improves interaction but also integrates features that make the literary discovery process more engaging and accurate."
     }
 ]
 

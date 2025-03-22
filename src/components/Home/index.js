@@ -19,7 +19,9 @@ const Home = () => {
     , [])
 
     return(
+        
         <div className="container home-page">
+            <span className="tags top-tags">&lt;body&gt;</span>
             <div className="text-zone">
                 <h1>
                     <span className={letterClass}>H</span>
@@ -41,7 +43,12 @@ const Home = () => {
                 <NavLink exact="true" activeclassname="active" className="projects-gallery" to='/projects-gallery'>
                     <span>MY PROJECTS <FontAwesomeIcon icon={faChevronRight} color="#ffd700"/></span>
                 </NavLink>
-                </div>
+            </div>
+            <span className="tags bottom-tags">
+            &lt;/body&gt;
+            <br />
+            <span className="bottom-tag-html">&lt;/html&gt;</span>
+        </span>
         </div>
     )
 }

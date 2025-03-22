@@ -6,6 +6,17 @@ $breakpoints: (
 
 .home-page{
 
+    .top-tags{
+        left: 100px;
+        top: 25px;
+        font-size: 16px;
+    }
+    .bottom-tags{
+        left: 100px;
+        bottom: 70px;
+        font-size: 16px;
+    }
+
     .text-zone{
         position: absolute;
         left: 10%;
@@ -112,12 +123,25 @@ $breakpoints: (
 
 @media (max-width: map-get($breakpoints, "big")) {
     .home-page{
+
+        .top-tags{
+            left: 100px;
+            top: 25px;
+            font-size: 16px;
+        }
+        .bottom-tags{
+            left: 100px;
+            bottom: 70px;
+            font-size: 16px;
+        }
+
         h1{
             font-size: 36px;
+            span{
+                font-size: 42px;
+            }
         }
-        span{
-            font-size: 42px;
-        }
+        
     }
     .my-projects{
         span{
@@ -127,12 +151,25 @@ $breakpoints: (
 }
 @media (max-width: map-get($breakpoints, "medium")) {
     .home-page{
+
+        .top-tags{
+            left: 100px;
+            top: 25px;
+            font-size: 16px;
+        }
+        .bottom-tags{
+            left: 100px;
+            bottom: 70px;
+            font-size: 16px;
+        }
+
         h1{
             font-size: 28px;
+            span{
+                font-size: 36px;
+            }
         }
-        span{
-            font-size: 36px;
-        }
+        
     }
     .my-projects{
         span{
@@ -142,6 +179,18 @@ $breakpoints: (
 }
 @media (max-width: map-get($breakpoints, "medium-small")) {
     .home-page{
+
+        .top-tags{
+            left: 10px;
+            top: 25px;
+            font-size: 16px;
+        }
+        .bottom-tags{
+            left: 30px;
+            bottom: 70px;
+            font-size: 16px;
+        }
+
         h1{
             font-size: 18px;
 
@@ -166,9 +215,6 @@ $breakpoints: (
                 opacity: 0.6;
                 animation: fadeIn 1s 1.7s backwards;
             }
-        }
-        span{
-            font-size: 32px;
         }
         h1 .my-name{
             font-size: 32px;

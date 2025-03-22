@@ -1,63 +1,51 @@
 import './index.scss'
-import comicreaders1 from '../../assets/images/comicreaders1.png'
-import comicreaders2 from '../../assets/images/comicreaders2.png'
-import logoHtml from '../../assets/images/logo1.png'
-import logoCss from '../../assets/images/logo2.png'
-import logoJs from '../../assets/images/logo3.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faCss3, faGithub, faHtml5, faJsSquare, faReact, faSass } from '@fortawesome/free-brands-svg-icons'
+import { useParams, useLocation, Link } from "react-router-dom";
+import { faLeftLong } from '@fortawesome/free-solid-svg-icons';
+
+const skillIcons = {
+    HTML: faHtml5,
+    CSS: faCss3,
+    JAVASCRIPT: faJsSquare,
+    SASS: faSass,
+    REACT: faReact
+  };
+
 
 const MoreProjects = () => {
-    return (
-        <div className="more-projects">
-            <div className="comic-readers">
-                <div className="project-header">
-                    <div className="project-title">
-                        <h2>Comic Readers</h2>
-                        <a target='_blank' rel="noreferrer" href='https://comicreaders.netlify.app/'><span>comicreaders.netlify.app</span></a>
-                    </div>
-                    <div className="next_project">
-                        
-                    </div>
-                    
+    const { id } = useParams();
+    const location = useLocation();
+    const project = location.state?.project;
+    
+    if (!project){
+        return <div className="project-empty"><h2>Projeto não encontrado</h2></div>
+    } else {
+        return (
+            <div key={id} className="more-projects">
+                <Link className="back-to-projects" to={`/projects-gallery`}><FontAwesomeIcon icon={faLeftLong} className="back-button" color="#ffd700"/></Link>
+                <div className="p-header">
+                    <h1>{project.name}</h1>
+                    <a target="_blank" rel="noreferrer" href={project.link}>{project.linkName}</a>
                 </div>
-                <div className="project-body">
-                    <div className="project-images">
-                        <img className="image-pos-1" src={comicreaders1} alt="Comic Readers 1" />
-                        <img className="image-pos-2" src={comicreaders2} alt="Comic Readers 2" />
+                <div className="p-content">
+                    <div className="p-image">
+                        <img src={project.image} alt={project.name} />
                     </div>
-                    <div className="project-description">
-                        <div className="project-description-text">
-                            <h3>Project Description</h3>
-                            <p>I developed Comic Readers, a website designed to enhance the user experience in book searches. Using <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b>, I created an intuitive interface with advanced filters that make searches faster and more efficient. Additionally, I developed a book recommendation algorithm that suggests options based on user choices, creating a dynamic and personalized experience. This solution offers multiple combinations of suggestions, making it easier to choose books that match the user's interests. The project not only improves interaction but also integrates features that make the literary discovery process more engaging and accurate.</p>
-                            <FontAwesomeIcon icon={faGithub} /> <a target='_blank' rel="noreferrer" href='https://github.com/gabriel030899/comicreaders'>Github repository</a>
-                        </div>
-                        <div className="project-description-tech">
-                        <h3>Project Technologies</h3>
-                            <div className="tech-percentage">
-                                <img src={logoHtml} alt="HTML" />
-                                <div className="percentage-bar">
-                                    <div className="percentage-fill" style={{width: '9.8%'}}></div>
-                                </div>
-                            </div>
-                            <div className="tech-percentage">
-                                <img src={logoCss} alt="CSS" />
-                                <div className="percentage-bar">
-                                    <div className="percentage-fill" style={{width: '15.7%'}}></div>
-                                </div>
-                            </div>
-                            <div className="tech-percentage">
-                                <img src={logoJs} alt="JAVASCRIPT" />
-                                <div className="percentage-bar">
-                                    <div className="percentage-fill" style={{width: '74.5%'}}></div>
-                                </div>
-                            </div>
+                    <div className="p-description">
+                        <p>{project.description}</p>
+                        <a target="_blank" rel="noreferrer" href={project.github}> <FontAwesomeIcon icon={faGithub} /> Github</a>
+                        <div className="skills-gallery">
+                            {project.skills.map(({name}) => (
+                                <span><FontAwesomeIcon icon={skillIcons[name]} color="#022c43"/> {name}</span>
+                            ))}
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    );
+        );
+    }
+    
 }
 
 export default MoreProjects;

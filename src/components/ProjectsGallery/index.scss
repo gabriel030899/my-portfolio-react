@@ -36,11 +36,11 @@ $breakpoints: (
             border-radius: 10px;
             box-shadow: 2px 3px 3px 3px #fff4b491;
             opacity: 0;
-            animation: fadeInUp 2s 2s;
+            animation: fadeInUp 1s 1s;
             animation-fill-mode: forwards;
             
             &:nth-child(1){
-                animation-delay: 0.5s;
+                animation-delay: 0.2s;
             }
             
             
@@ -97,12 +97,12 @@ $breakpoints: (
     .projects-page{
         margin-left: 0;
         padding-top: 10px;
-        padding-bottom: 80px;
+        padding-bottom: 65px;
         display: flex;
         flex-direction: column;
         justify-content: start;
         align-items: center;
-        height: 85%;
+        height: 100%;
 
         .gallery-container{
             width: 100%;
@@ -111,7 +111,7 @@ $breakpoints: (
             flex-direction: column;
             justify-content: start;
             align-items: center;
-            overflow: scroll;
+            overflow-y: scroll;
 
             .project-card{
                 margin-bottom: 30px;

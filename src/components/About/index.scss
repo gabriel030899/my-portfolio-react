@@ -91,7 +91,7 @@ $breakpoints: (
 @media (max-width: map-get($breakpoints, "medium-small")) {
     .stage-cube-cont{
         width: 40%;
-        height: 100px;
+        height: 200px;
 
         .cubespinner{
             position: absolute;
@@ -148,9 +148,10 @@ $breakpoints: (
         }
 
         .text-description{
-            overflow: scroll;
-            height: 50vh;
-            width: 90%;
+            overflow-y: scroll;
+            height: 60vh;
+            width: 100%;
+            padding-right: 40px;
         }
     }
 }

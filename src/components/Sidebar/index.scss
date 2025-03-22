@@ -158,18 +158,14 @@ ul{
         }
 
         ul{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: end;
-            width: 0%;
+            width: 10%;
             position: absolute;
             bottom: 80px;
-            right: 20px;
+            right: 5px;
             
 
             li:nth-of-type(2){
-                margin: 5% 0;
+                margin: 40% 0;
             }
 
             a{
