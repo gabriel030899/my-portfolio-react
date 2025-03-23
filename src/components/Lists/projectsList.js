@@ -1,5 +1,6 @@
 import comicreaders1 from '../../assets/images/comicreaders1.png'
 import myportfolio from '../../assets/images/my-portfolio.png'
+import lojify from '../../assets/images/lojifyplatform.png'
 
 
 const projectsList = [
@@ -30,6 +31,23 @@ const projectsList = [
         github: 'https://github.com/gabriel030899/comicreaders',
         image: comicreaders1,
         description: "I developed Comic Readers, a website designed to enhance the user experience in book searches. Using HTML, CSS, and JavaScript, I created an intuitive interface with advanced filters that make searches faster and more efficient. Additionally, I developed a book recommendation algorithm that suggests options based on user choices, creating a dynamic and personalized experience. This solution offers multiple combinations of suggestions, making it easier to choose books that match the user's interests. The project not only improves interaction but also integrates features that make the literary discovery process more engaging and accurate."
+    },
+    {
+        id: 3,
+        name: 'Lojify Platform ( In Progress )',
+        link: 'https://lojifyplatform.netlify.app/',
+        linkName: 'lojifyplatform.netlify.app',
+        skills: [
+            {name:'HTML'}, 
+            {name:'TAILWIND'},
+            {name:'REACT'},
+            {name:'NEXTJS'},
+            {name:'TYPESCRIPT'},
+            {name:'JAVA'},
+        ],
+        github: 'https://github.com/gabriel030899/lojify-platform',
+        image: lojify,
+        description: "I am developing Lojify to be a SaaS platform. The idea is to create a user-friendly web platform for stores. I am using Next.js, React, TypeScript, Tailwind, and Java for the back end in the future. Even if it might be overengineered, the creation of the back end in Java is for learning purposes. The focus of the platform is to offer a better and more intuitive solution to manage store sales, enabling features like creating carts while attending customers and completing sales at the counter. Some essential functionalities include issuing invoices, managing products, managing carts, and providing sales summaries. The manager will have access to an exclusive dashboard to view various charts and reports on sales, employees, and customers."
     }
 ]
 

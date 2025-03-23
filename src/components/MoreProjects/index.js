@@ -1,6 +1,6 @@
 import './index.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCss3, faGithub, faHtml5, faJsSquare, faReact, faSass } from '@fortawesome/free-brands-svg-icons'
+import { faCss3, faGithub, faHtml5, faJsSquare, faReact, faSass, faJava } from '@fortawesome/free-brands-svg-icons'
 import { useParams, useLocation, Link } from "react-router-dom";
 import { faLeftLong } from '@fortawesome/free-solid-svg-icons';
 
@@ -9,7 +9,8 @@ const skillIcons = {
     CSS: faCss3,
     JAVASCRIPT: faJsSquare,
     SASS: faSass,
-    REACT: faReact
+    REACT: faReact,
+    JAVA: faJava,
   };
 
 

@@ -1,7 +1,7 @@
 import './index.scss'
 import projectsList from '../Lists/projectsList'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCss3, faGithub, faHtml5, faJsSquare, faReact, faSass } from '@fortawesome/free-brands-svg-icons'
+import { faCss3, faGithub, faHtml5, faJava, faJsSquare, faReact, faSass } from '@fortawesome/free-brands-svg-icons'
 import { Link } from 'react-router-dom'
 
 const skillIcons = {
@@ -9,7 +9,8 @@ const skillIcons = {
     CSS: faCss3,
     JAVASCRIPT: faJsSquare,
     SASS: faSass,
-    REACT: faReact
+    REACT: faReact,
+    JAVA: faJava,
   };
 
 const ProjectsGallery = () => {
